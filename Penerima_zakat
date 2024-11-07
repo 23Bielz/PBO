@@ -1,0 +1,29 @@
+// Penerima.java
+public class Penerima {
+    private String namaPenerima;
+    private String kategori;
+
+    // Konstruktor berparameter untuk inisialisasi nama penerima dan kategori
+    public Penerima(String namaPenerima, String kategori) {
+        this.namaPenerima = namaPenerima;
+        this.kategori = kategori;
+    }
+
+    // Setter dan Getter untuk nama penerima
+    public void setNamaPenerima(String namaPenerima) {
+        this.namaPenerima = namaPenerima;
+    }
+
+    public String getNamaPenerima() {
+        return namaPenerima;
+    }
+
+    // Setter dan Getter untuk kategori penerima
+    public void setKategori(String kategori) {
+        this.kategori = kategori;
+    }
+
+    public String getKategori() {
+        return kategori;
+    }
+}
