@@ -1,0 +1,39 @@
+// Muzaki.java
+public class Muzaki {
+    private String nama;
+    private double harta;
+
+    // Konstruktor berparameter untuk inisialisasi nama dan jumlah harta
+    public Muzaki(String nama, double harta) {
+        this.nama = nama;
+        this.harta = harta;
+    }
+
+    // Setter dan Getter untuk nama
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    // Setter dan Getter untuk harta
+    public void setHarta(double harta) {
+        this.harta = harta;
+    }
+
+    public double getHarta() {
+        return harta;
+    }
+
+    // Metode untuk menghitung zakat maal (2.5% dari total harta)
+    public double hitungZakatMaal() {
+        return harta * 0.025;
+    }
+
+    // Metode untuk mengecek apakah harta mencapai nisab atau tidak
+    public boolean isWajibZakat(double nisab) {
+        return harta >= nisab;
+    }
+}
